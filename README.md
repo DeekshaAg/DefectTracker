@@ -1,5 +1,13 @@
-# DefectTracker
+# DefectTracker : It is a microservice based defect logging and tracking system. It is designed for all the CRUD operations on defects.
 
-# The .properties files are being used by the config server and other microservices.
-# The jar file is the project exe file.
-# the zipped file 742178-DefectTracker-Project-files contains all the individual microservices and the config server, zuul server and discovery server source code.
+# The core components include: 
+#1. Config Server
+#2. Discovery Server
+#3. Zuul Gateway Server
+#4. DefectDetails Microservice: To create, update, delete defects.
+#5. UserInformation Microservice: To fetch user details.
+#6. UserCatalog Microservice: This uses the DefectDetailsMS and UserInformationMS to fetch all the defects assigned to a particular user, which we can subsequently drill down.
+
+# The application.properties file is being used by the config server
+# The .properties files for each microservice is being accessed through the config server.
+# The DiscoveryServer.properties file is for the DiscoveryServer.
