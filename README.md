@@ -8,6 +8,7 @@
 #5. UserInformation Microservice: To fetch user details.
 #6. UserCatalog Microservice: This uses the DefectDetailsMS and UserInformationMS to fetch all the defects assigned to a particular user, which we can subsequently drill down.
 
-# The application.properties file is being used by the config server
-# The .properties files for each microservice is being accessed through the config server.
-# The DiscoveryServer.properties file is for the DiscoveryServer.
+# The properties file info:
+#1. The application.properties file is being used by the config server
+#2. The .properties files for each microservice is being accessed through the config server.
+#3. The DiscoveryServer.properties file is for the DiscoveryServer.
